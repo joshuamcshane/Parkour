@@ -15,6 +15,7 @@
 		A5E81B301BC32FCE00B64049 /* ParkourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E81B2F1BC32FCE00B64049 /* ParkourTests.swift */; };
 		A5E81B3B1BC32FCE00B64049 /* ParkourUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E81B3A1BC32FCE00B64049 /* ParkourUITests.swift */; };
 		A5E81B491BC3309300B64049 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E81B481BC3309300B64049 /* TableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A5FDDFCC1BC5D22B0096570C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FDDFCB1BC5D22B0096570C /* MapViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A5E81B3A1BC32FCE00B64049 /* ParkourUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkourUITests.swift; sourceTree = "<group>"; };
 		A5E81B3C1BC32FCE00B64049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5E81B481BC3309300B64049 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		A5FDDFCB1BC5D22B0096570C /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				A5E81B1A1BC32FCE00B64049 /* AppDelegate.swift */,
 				A5E81B1C1BC32FCE00B64049 /* ViewController.swift */,
+				A5FDDFCB1BC5D22B0096570C /* MapViewController.swift */,
 				A5E81B1E1BC32FCE00B64049 /* Main.storyboard */,
 				A5E81B481BC3309300B64049 /* TableViewController.swift */,
 				A5E81B211BC32FCE00B64049 /* Assets.xcassets */,
@@ -261,6 +264,7 @@
 				A5E81B1D1BC32FCE00B64049 /* ViewController.swift in Sources */,
 				A5E81B491BC3309300B64049 /* TableViewController.swift in Sources */,
 				A5E81B1B1BC32FCE00B64049 /* AppDelegate.swift in Sources */,
+				A5FDDFCC1BC5D22B0096570C /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +491,7 @@
 				A5E81B411BC32FCE00B64049 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5E81B421BC32FCE00B64049 /* Build configuration list for PBXNativeTarget "ParkourTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +500,7 @@
 				A5E81B441BC32FCE00B64049 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5E81B451BC32FCE00B64049 /* Build configuration list for PBXNativeTarget "ParkourUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +509,7 @@
 				A5E81B471BC32FCE00B64049 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

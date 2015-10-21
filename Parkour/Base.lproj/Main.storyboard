@@ -64,6 +64,34 @@
             </objects>
             <point key="canvasLocation" x="1044" y="1273"/>
         </scene>
+        <!--Map View Controller-->
+        <scene sceneID="mMe-iY-are">
+            <objects>
+                <viewController id="Qx9-42-gc1" customClass="MapViewController" customModule="Parkour" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lAM-MD-oLO"/>
+                        <viewControllerLayoutGuide type="bottom" id="IQ9-oH-7c0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rpj-LV-5Rb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="AEG-mb-gQV">
+                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                                <animations/>
+                            </mapView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="AEG-mb-gQV" id="VZg-qw-Aoo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j0b-l2-5Gw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-702" y="39"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bfm-vC-tNW">
             <objects>
@@ -104,7 +132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AIc-uj-iaJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-401" y="1273"/>
+            <point key="canvasLocation" x="-555" y="1273"/>
         </scene>
         <!--Contacts-->
         <scene sceneID="1Xz-fZ-OLd">
