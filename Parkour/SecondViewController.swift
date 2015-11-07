@@ -1,14 +1,14 @@
 //
-//  ViewController.swift
-//  Parkour
+//  SecondViewController.swift
+//  Parkour_local
 //
-//  Created by Nathan Nguyen on 10/5/15.
-//  Copyright © 2015 Nathan Nguyen. All rights reserved.
+//  Created by Joshua McShane on 11/7/15.
+//  Copyright © 2015 Joshua McShane. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
