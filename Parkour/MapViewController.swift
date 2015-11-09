@@ -12,6 +12,7 @@ import AddressBook
 
 class MapViewController: UIViewController, MKMapViewDelegate {
 
+    @IBOutlet weak var switchMaps: UISegmentedControl!
     @IBOutlet weak var mapView: MKMapView!
 
     override func viewDidLoad() {

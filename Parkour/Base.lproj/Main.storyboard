@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Lcn-lA-HQL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Lcn-lA-HQL">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
@@ -42,7 +42,7 @@
                                 <rect key="frame" x="245" y="46" width="111" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parking Space #" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bW-mX-lTX">
@@ -52,7 +52,7 @@
                                     <constraint firstAttribute="height" constant="21" id="LdF-0V-OaY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Left: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bxy-kD-R4c">
@@ -62,7 +62,7 @@
                                     <constraint firstAttribute="width" constant="82" id="Xhr-nU-ihQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbP-HA-V6E">
@@ -118,17 +118,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="AEG-mb-gQV">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="AEG-mb-gQV">
                                 <rect key="frame" x="0.0" y="28" width="600" height="572"/>
                                 <animations/>
                             </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wu2-Ob-Ees">
+                                <rect key="frame" x="259" y="59" width="83" height="29"/>
+                                <animations/>
+                                <segments>
+                                    <segment title="Map"/>
+                                    <segment title="List"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="AEG-mb-gQV" secondAttribute="trailing" id="6Sl-lv-aZz"/>
+                            <constraint firstItem="wu2-Ob-Ees" firstAttribute="top" secondItem="lAM-MD-oLO" secondAttribute="bottom" constant="39" id="BxB-q6-CeU"/>
+                            <constraint firstAttribute="bottom" secondItem="AEG-mb-gQV" secondAttribute="bottom" id="I7i-da-Dbj"/>
+                            <constraint firstItem="AEG-mb-gQV" firstAttribute="leading" secondItem="rpj-LV-5Rb" secondAttribute="leading" id="UDV-f6-7ek"/>
+                            <constraint firstItem="wu2-Ob-Ees" firstAttribute="centerX" secondItem="AEG-mb-gQV" secondAttribute="centerX" id="eIf-dK-wsI"/>
+                            <constraint firstItem="AEG-mb-gQV" firstAttribute="top" secondItem="lAM-MD-oLO" secondAttribute="bottom" constant="8" symbolic="YES" id="wRO-Bb-n67"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" id="5iO-qT-yYm"/>
                     <connections>
                         <outlet property="mapView" destination="AEG-mb-gQV" id="VZg-qw-Aoo"/>
+                        <outlet property="switchMaps" destination="wu2-Ob-Ees" id="TDc-ux-byF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j0b-l2-5Gw" userLabel="First Responder" sceneMemberID="firstResponder"/>
