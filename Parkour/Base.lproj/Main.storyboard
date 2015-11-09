@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Lcn-lA-HQL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Lcn-lA-HQL">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Fees/Penalties-->
@@ -22,7 +24,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H0D-75-GLJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2471" y="1273"/>
+            <point key="canvasLocation" x="1735" y="1273"/>
         </scene>
         <!--Parking Status-->
         <scene sceneID="51V-9T-L3t">
@@ -35,36 +37,76 @@
                     <view key="view" contentMode="scaleToFill" id="zLH-pw-ha8">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parking Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDL-m1-gD8">
+                                <rect key="frame" x="245" y="46" width="111" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parking Space #" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bW-mX-lTX">
+                                <rect key="frame" x="103" y="111" width="125" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="LdF-0V-OaY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Left: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bxy-kD-R4c">
+                                <rect key="frame" x="389" y="111" width="82" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="82" id="Xhr-nU-ihQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbP-HA-V6E">
+                                <rect key="frame" x="395" y="196" width="70" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Check out"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter more time:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mtp-ro-p2v">
+                                <rect key="frame" x="100" y="196" width="128" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5D-YE-jka">
+                                <rect key="frame" x="280" y="285" width="40" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Clear "/>
+                            </button>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bxy-kD-R4c" firstAttribute="centerX" secondItem="qbP-HA-V6E" secondAttribute="centerX" id="8rX-v5-Fmc"/>
+                            <constraint firstAttribute="trailing" secondItem="Bxy-kD-R4c" secondAttribute="trailing" constant="129" id="Fh1-XI-OW0"/>
+                            <constraint firstItem="loe-9p-agU" firstAttribute="top" secondItem="GDL-m1-gD8" secondAttribute="bottom" constant="484" id="In5-2T-CaM"/>
+                            <constraint firstItem="mtp-ro-p2v" firstAttribute="trailing" secondItem="1bW-mX-lTX" secondAttribute="trailing" id="MyV-kV-ZHc"/>
+                            <constraint firstItem="1bW-mX-lTX" firstAttribute="baseline" secondItem="Bxy-kD-R4c" secondAttribute="baseline" id="PMO-AZ-ai5"/>
+                            <constraint firstItem="mtp-ro-p2v" firstAttribute="leading" secondItem="zLH-pw-ha8" secondAttribute="leadingMargin" constant="80" id="QfR-CU-79U"/>
+                            <constraint firstItem="GDL-m1-gD8" firstAttribute="top" secondItem="Zct-KL-ghv" secondAttribute="bottom" constant="26" id="Uuh-2y-5bd"/>
+                            <constraint firstItem="mtp-ro-p2v" firstAttribute="top" secondItem="qbP-HA-V6E" secondAttribute="top" id="cD5-X3-hkF"/>
+                            <constraint firstItem="1bW-mX-lTX" firstAttribute="top" secondItem="Zct-KL-ghv" secondAttribute="bottom" constant="91" id="ipk-Wc-RYE"/>
+                            <constraint firstItem="GDL-m1-gD8" firstAttribute="centerX" secondItem="zLH-pw-ha8" secondAttribute="centerX" id="oRh-Fc-S6R"/>
+                            <constraint firstItem="mtp-ro-p2v" firstAttribute="top" secondItem="1bW-mX-lTX" secondAttribute="bottom" constant="64" id="pRz-P3-yPe"/>
+                            <constraint firstItem="1bW-mX-lTX" firstAttribute="leading" secondItem="zLH-pw-ha8" secondAttribute="leadingMargin" constant="83" id="sjB-qe-tNQ"/>
+                            <constraint firstItem="Bxy-kD-R4c" firstAttribute="firstBaseline" secondItem="1bW-mX-lTX" secondAttribute="firstBaseline" id="zd3-6j-54a"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Parking Status" id="bjR-Q8-Ox7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yEw-K6-toG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1764" y="1273"/>
+            <point key="canvasLocation" x="324" y="1273"/>
         </scene>
-        <!--Locations-->
-        <scene sceneID="WGx-RE-Rmp">
-            <objects>
-                <viewController title="Locations" id="8hp-At-dR7" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="BV8-gd-EAg"/>
-                        <viewControllerLayoutGuide type="bottom" id="zT8-7Q-4cU"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="5FH-NU-xcq">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Locations" id="pVT-qf-ypH"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aeH-sK-bTG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1044" y="1273"/>
-        </scene>
-        <!--Map View Controller-->
+        <!--Map-->
         <scene sceneID="mMe-iY-are">
             <objects>
                 <viewController id="Qx9-42-gc1" customClass="MapViewController" customModule="Parkour" customModuleProvider="target" sceneMemberID="viewController">
@@ -77,20 +119,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="AEG-mb-gQV">
-                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                                <rect key="frame" x="0.0" y="28" width="600" height="572"/>
                                 <animations/>
                             </mapView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Map" id="5iO-qT-yYm"/>
                     <connections>
                         <outlet property="mapView" destination="AEG-mb-gQV" id="VZg-qw-Aoo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j0b-l2-5Gw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-702" y="39"/>
+            <point key="canvasLocation" x="-358" y="1273"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bfm-vC-tNW">
@@ -103,36 +146,15 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="a5T-l4-J1B" kind="relationship" relationship="viewControllers" id="sdg-8i-IBG"/>
-                        <segue destination="8hp-At-dR7" kind="relationship" relationship="viewControllers" id="2LZ-nt-Vcy"/>
                         <segue destination="Y2M-SL-Zao" kind="relationship" relationship="viewControllers" id="Sa0-3b-AO3"/>
                         <segue destination="rUG-ud-dZR" kind="relationship" relationship="viewControllers" id="1KQ-UW-JYR"/>
                         <segue destination="YF1-r5-KUx" kind="relationship" relationship="viewControllers" id="IpL-er-cmC"/>
+                        <segue destination="Qx9-42-gc1" kind="relationship" relationship="viewControllers" id="ECz-Il-Eds"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y9X-cc-8HI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="792" y="343"/>
-        </scene>
-        <!--Map-->
-        <scene sceneID="f6w-Oj-Cxk">
-            <objects>
-                <viewController title="Map" id="a5T-l4-J1B" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="cBx-Xp-RNB"/>
-                        <viewControllerLayoutGuide type="bottom" id="IYt-vf-p5Z"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="WxY-je-8gg">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Map" id="CoU-lr-mab"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AIc-uj-iaJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-555" y="1273"/>
         </scene>
         <!--Contacts-->
         <scene sceneID="1Xz-fZ-OLd">
@@ -165,7 +187,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O2Q-UL-hGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="336" y="1273"/>
+            <point key="canvasLocation" x="998" y="1273"/>
         </scene>
     </scenes>
 </document>

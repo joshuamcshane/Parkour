@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A53A24F81BE543C90043FB65 /* PenaltiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A24F71BE543C90043FB65 /* PenaltiesTableViewController.swift */; };
+		A55DB14B1BE18417006A1E74 /* ParkingStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55DB14A1BE18417006A1E74 /* ParkingStatusViewController.swift */; };
+		A5E52A0F1BEE676400391DFF /* DeckAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E52A0E1BEE676400391DFF /* DeckAnnotation.swift */; };
 		A5E81B1B1BC32FCE00B64049 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E81B1A1BC32FCE00B64049 /* AppDelegate.swift */; };
 		A5E81B1D1BC32FCE00B64049 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E81B1C1BC32FCE00B64049 /* ViewController.swift */; };
 		A5E81B201BC32FCE00B64049 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E81B1E1BC32FCE00B64049 /* Main.storyboard */; };
@@ -14,8 +17,8 @@
 		A5E81B251BC32FCE00B64049 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E81B231BC32FCE00B64049 /* LaunchScreen.storyboard */; };
 		A5E81B301BC32FCE00B64049 /* ParkourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E81B2F1BC32FCE00B64049 /* ParkourTests.swift */; };
 		A5E81B3B1BC32FCE00B64049 /* ParkourUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E81B3A1BC32FCE00B64049 /* ParkourUITests.swift */; };
-		A5E81B491BC3309300B64049 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E81B481BC3309300B64049 /* TableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		A5FDDFCC1BC5D22B0096570C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FDDFCB1BC5D22B0096570C /* MapViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A5E81B491BC3309300B64049 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E81B481BC3309300B64049 /* TableViewController.swift */; };
+		A5FDDFCC1BC5D22B0096570C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FDDFCB1BC5D22B0096570C /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A53A24F71BE543C90043FB65 /* PenaltiesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PenaltiesTableViewController.swift; sourceTree = "<group>"; };
+		A55DB14A1BE18417006A1E74 /* ParkingStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingStatusViewController.swift; sourceTree = "<group>"; };
+		A5E52A0E1BEE676400391DFF /* DeckAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckAnnotation.swift; sourceTree = "<group>"; };
 		A5E81B171BC32FCE00B64049 /* Parkour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parkour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5E81B1A1BC32FCE00B64049 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5E81B1C1BC32FCE00B64049 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,13 +107,16 @@
 		A5E81B191BC32FCE00B64049 /* Parkour */ = {
 			isa = PBXGroup;
 			children = (
-				A5E81B1A1BC32FCE00B64049 /* AppDelegate.swift */,
-				A5E81B1C1BC32FCE00B64049 /* ViewController.swift */,
-				A5FDDFCB1BC5D22B0096570C /* MapViewController.swift */,
 				A5E81B1E1BC32FCE00B64049 /* Main.storyboard */,
-				A5E81B481BC3309300B64049 /* TableViewController.swift */,
-				A5E81B211BC32FCE00B64049 /* Assets.xcassets */,
 				A5E81B231BC32FCE00B64049 /* LaunchScreen.storyboard */,
+				A5E81B211BC32FCE00B64049 /* Assets.xcassets */,
+				A5E81B1A1BC32FCE00B64049 /* AppDelegate.swift */,
+				A5FDDFCB1BC5D22B0096570C /* MapViewController.swift */,
+				A5E52A0E1BEE676400391DFF /* DeckAnnotation.swift */,
+				A55DB14A1BE18417006A1E74 /* ParkingStatusViewController.swift */,
+				A5E81B1C1BC32FCE00B64049 /* ViewController.swift */,
+				A5E81B481BC3309300B64049 /* TableViewController.swift */,
+				A53A24F71BE543C90043FB65 /* PenaltiesTableViewController.swift */,
 				A5E81B261BC32FCE00B64049 /* Info.plist */,
 			);
 			path = Parkour;
@@ -262,9 +271,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5E81B1D1BC32FCE00B64049 /* ViewController.swift in Sources */,
+				A55DB14B1BE18417006A1E74 /* ParkingStatusViewController.swift in Sources */,
 				A5E81B491BC3309300B64049 /* TableViewController.swift in Sources */,
 				A5E81B1B1BC32FCE00B64049 /* AppDelegate.swift in Sources */,
 				A5FDDFCC1BC5D22B0096570C /* MapViewController.swift in Sources */,
+				A53A24F81BE543C90043FB65 /* PenaltiesTableViewController.swift in Sources */,
+				A5E52A0F1BEE676400391DFF /* DeckAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
