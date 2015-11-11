@@ -1,18 +1,14 @@
 //
-//  ContactsTableViewController.swift
+//  PenaltiesTableViewController.swift
 //  Parkour
 //
-//  Created by Joshua McShane on 11/8/15.
+//  Created by Joshua McShane on 11/11/15.
 //  Copyright © 2015 Nathan Nguyen. All rights reserved.
 //
 
 import UIKit
 
-class ContactsTableViewController: UITableViewController {
-    
-    //MARK: Properties
-    
-    var contacts = [Contact]()
+class PenaltiesTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,19 +18,6 @@ class ContactsTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
-        //Load the sample data.
-        loadSampleContacts()
-    }
-    
-    func loadSampleContacts() {
-        
-        let contact1 = Contact(name: "Georgia State University Parking", street: "66 Courtland Street, Suite 200", city: "Atlanta", state: "GA", zip: 30303, phone: 4044139500, email: "auxiliary@gsu.edu")!
-        
-        let contact2 = Contact(name: "Georgia State University Police Department", street: "34 Broad Street, Room 1108", city: "Atlanta", state: "GA", zip: 30303, phone: 4044133333, email: "police@gsu.edu")!
-        
-        contacts += [contact1, contact2]
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,31 +29,23 @@ class ContactsTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return contacts.count
+        return 0
     }
 
-    
+    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        let cellIdentifier = "ContactTableViewCell"
-        
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! ContactTableViewCell
-        
-        let contact = contacts[indexPath.row]
-        
-        cell.contactLabel.text = contact.name
-        cell.contactInfo.text = contact.fullInfo
-        
-//        cell.contactInfo.text = contact.info
+        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+
+        // Configure the cell...
 
         return cell
     }
-
+    */
 
     /*
     // Override to support conditional editing of the table view.

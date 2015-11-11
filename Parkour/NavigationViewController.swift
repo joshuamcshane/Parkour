@@ -1,17 +1,27 @@
 //
-//  ThirdViewController.swift
+//  NavigationViewController.swift
 //  Parkour
 //
-//  Created by Joshua McShane on 11/7/15.
+//  Created by Joshua McShane on 11/10/15.
 //  Copyright © 2015 Nathan Nguyen. All rights reserved.
 //
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class NavigationViewController: UINavigationController {
+    
+    //Create UIColor object
+    let navColor = UIColor(red: 44/255, green: 170/255, blue: 54/255, alpha: 1)
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Set navbar text color
+        self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+        //Set tint of nav bar elements
+        self.navigationBar.tintColor = UIColor.whiteColor()
+        //Set nav bar color
+        self.navigationBar.barTintColor = navColor
 
         // Do any additional setup after loading the view.
     }
