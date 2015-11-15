@@ -12,9 +12,12 @@ import AddressBook
 
 class MapViewController: UIViewController, MKMapViewDelegate {
 
+    @IBOutlet weak var mapSegment: UISegmentedControl!
+    
     @IBOutlet weak var mapView: MKMapView!
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         mapView.delegate = self
@@ -68,7 +71,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         gDeckAnnotation.title = "gDeck"
      
         
-       mapView.addAnnotations([gDeckAnnotation, nDeckAnnotation, kDeckAnnotation])
+       mapView.addAnnotations([gDeckAnnotation, nDeckAnnotation, kDeckAnnotation, mDeckAnnotation])
         
 //        var placemark = MKPlacemark (coordinate: mDeckLocation, addressDictionary: nil)
 //        var mapItem = MKMapItem (placemark: placemark)
@@ -82,6 +85,92 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     func centerMapOnLocation (location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate , regionRadius, regionRadius)
         mapView.setRegion(coordinateRegion, animated: true)
+    }
+    
+    
+    @IBAction func switchMaps(sender: AnyObject)
+    {
+       switch mapSegment.selectedSegmentIndex
+       {
+       case 0:
+        break
+      
+        
+       case 1:
+
+        let mapListTableViewController = self.storyboard!.instantiateViewControllerWithIdentifier("MapListTableViewController")
+        
+         tabBarController!.presentViewController(mapListTableViewController, animated: true, completion: nil)
+        
+       default:
+        break;
+        
+       }
+    
+    }
+    
+    func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
+        // 1
+        let identifier = "Capital"
+        
+        // 2
+       // if annotation.isKindOfClass(Capital.self) {
+            // 3
+            var annotationView = mapView.dequeueReusableAnnotationViewWithIdentifier(identifier)
+            
+            if annotationView == nil {
+                //4
+                annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+                annotationView!.canShowCallout = true
+                
+                // 5
+//                let btn = UIButton(type: .DetailDisclosure)
+//                annotationView!.rightCalloutAccessoryView = btn
+            } else {
+                // 6
+                annotationView!.annotation = annotation
+            }
+            
+            return annotationView
+    //    }
+        
+        // 7
+      //  return nil
+    }
+    
+    
+    
+    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+    
+        let mDeckLocation = CLLocationCoordinate2D (
+            latitude: 33.753245, longitude: -84.384051
+        )
+        
+        let launchOptions  = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
+       
+        let geoCoder = CLGeocoder()
+        let newLocation = CLLocation(latitude: 40.74835, longitude: -73.984911)
+        
+//        let address  =
+//            [kABPersonAddressStreetKey: "6055 Lawrencevilley Hwy",
+//            kABPersonAddressCityKey: "New York",
+//            kABPersonAddressStateKey: "NY",
+//            kABPersonAddressZIPKey: "10118",
+//            kABPersonAddressCountryCodeKey: "US"]
+       
+        var placemark = MKPlacemark(coordinate: mDeckLocation , addressDictionary: nil)
+        var mapItem = MKMapItem(placemark: placemark)
+        mapItem.openInMapsWithLaunchOptions(launchOptions)
+        
+        let ac = UIAlertController(title: "test", message: "test", preferredStyle: .Alert)
+        ac.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+        presentViewController(ac, animated: true, completion: nil)
+        
+//        let deckDetailsViewController = self.storyboard!.instantiateViewControllerWithIdentifier("deckDetailsViewController")
+//        
+//        tabBarController!.presentViewController(deckDetailsViewController, animated: true, completion: nil)
+        
+        
     }
     
 //    func mapItem() -> MKMapItem
@@ -109,7 +198,6 @@ class MapViewController: UIViewController, MKMapViewDelegate {
 //    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
 //        <#code#>
 //    }
-   
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

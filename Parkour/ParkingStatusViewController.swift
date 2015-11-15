@@ -9,15 +9,43 @@
 import UIKit
 
 class ParkingStatusViewController: UIViewController {
-
+  
+    @IBOutlet weak var deckLabel: UILabel!
+    @IBOutlet weak var floorNumberLabel: UILabel!
+    @IBOutlet weak var timeClosesLabel: UILabel!
+    
+    var deckLetter :String!
+    var floorNumber = 0;
     var parkingSpaceNumber = 0;
     var timeLeft = 0;
     
+    var seconds = 5
+    var minutes = 10
+    var hours = 5
+    
+    var timer = NSTimer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        timeClosesLabel.text = "Time: \(hours)"
+      //  timeClosesLabel.text?.appendContentsOf(minutes)
+        
+        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "subtractTime", userInfo: nil, repeats: true)
+        
+        deckLabel.text = Deck.selectedDeck.name
+        floorNumberLabel.text?.appendContentsOf(String(floorNumber))
+        
         // Do any additional setup after loading the view.
+    }
+    
+    func subtractTime() {
+        seconds--
+        timeClosesLabel.text = "Time: \(seconds)"
+      
+        if (seconds == 0) {
+            timer.invalidate()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,12 +55,12 @@ class ParkingStatusViewController: UIViewController {
     
 
     /*
-    // MARK: - Navigation
+     MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+     In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+         Get the new view controller using segue.destinationViewController.
+         Pass the selected object to the new view controller.
     }
     */
 
