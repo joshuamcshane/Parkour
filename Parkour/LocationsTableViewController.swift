@@ -1,16 +1,14 @@
 //
-//  PenaltiesTableViewController.swift
+//  LocationsTableViewController.swift
 //  Parkour
 //
-//  Created by Joshua McShane on 11/11/15.
+//  Created by Joshua McShane on 11/13/15.
 //  Copyright © 2015 Nathan Nguyen. All rights reserved.
 //
 
 import UIKit
 
-class PenaltiesTableViewController: UITableViewController {
-    
-    var penalties = [Penalty]()
+class LocationsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,19 +18,6 @@ class PenaltiesTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
-        loadSamplePenalties()
-    }
-    
-    func loadSamplePenalties() {
-        
-        let penalty1 = Penalty(userID: 123, citationID: 1234, parkingSpaceID: 654, citationType: "Parking time expired.", dueDate: 12122015, paidDate: 12022015, amount: 45, lateFee: 100)
-        
-        let penalty2 = Penalty(userID: 456, citationID: 1235, parkingSpaceID: 467, citationType: "Car in lot after hours.", dueDate: 1212015, paidDate: 12012015, amount: 75, lateFee: 100)
-        
-        let penalty3 = Penalty(userID: 789, citationID: 1236, parkingSpaceID: 158, citationType: "Parking time expired.", dueDate: 12172015, paidDate: 12072015, amount: 30, lateFee: 100)
-        
-        penalties += [penalty1, penalty2, penalty3]
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,29 +29,23 @@ class PenaltiesTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return penalties.count
+        return 0
     }
 
-    
+    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        let cellIdentifier = "PenaltyTableViewCell"
-        
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! PenaltyTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
 
-        let penalty = penalties[indexPath.row]
-        
-        cell.penaltyLabel.text = penalty.citationType
-        cell.penaltyInfo.text = penalty.penaltyInfo
+        // Configure the cell...
 
         return cell
     }
-
+    */
 
     /*
     // Override to support conditional editing of the table view.

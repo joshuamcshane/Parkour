@@ -41,7 +41,7 @@ class Contact {
         self.phone = phone
         self.email = email
         
-        fullInfo = street + "\n" + city + ", " + state + " " + "\(zip)" + "\n" + "\(phone)"
+        fullInfo = street + "\n" + city + ", " + state + " " + "\(zip)" + "\n" + "\(phone)" + "\n" + email
     
         if name.isEmpty {
         return nil

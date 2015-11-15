@@ -10,6 +10,10 @@
 		421FD4831BF292B6000275A2 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421FD4821BF292B6000275A2 /* NavigationViewController.swift */; };
 		421FD48D1BF2F7D0000275A2 /* MapListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421FD48C1BF2F7D0000275A2 /* MapListViewController.swift */; };
 		421FD48F1BF3FC31000275A2 /* PenaltiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421FD48E1BF3FC31000275A2 /* PenaltiesTableViewController.swift */; };
+		421FD4911BF41039000275A2 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421FD4901BF41039000275A2 /* TabBarViewController.swift */; };
+		421FD4931BF69566000275A2 /* Penalty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421FD4921BF69566000275A2 /* Penalty.swift */; };
+		421FD4971BF69B0C000275A2 /* PenaltyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421FD4961BF69B0C000275A2 /* PenaltyTableViewCell.swift */; };
+		421FD4991BF6A524000275A2 /* LocationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421FD4981BF6A524000275A2 /* LocationsTableViewController.swift */; };
 		4258A96A1BEDCE4D0026AEB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4258A9671BEDCE4D0026AEB2 /* AppDelegate.swift */; };
 		4258A97D1BEDD8D20026AEB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4258A9791BEDD8D20026AEB2 /* Main.storyboard */; };
 		4258A97E1BEDD8D20026AEB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4258A97B1BEDD8D20026AEB2 /* LaunchScreen.storyboard */; };
@@ -43,6 +47,10 @@
 		421FD4821BF292B6000275A2 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		421FD48C1BF2F7D0000275A2 /* MapListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapListViewController.swift; sourceTree = "<group>"; };
 		421FD48E1BF3FC31000275A2 /* PenaltiesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PenaltiesTableViewController.swift; sourceTree = "<group>"; };
+		421FD4901BF41039000275A2 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		421FD4921BF69566000275A2 /* Penalty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Penalty.swift; sourceTree = "<group>"; };
+		421FD4961BF69B0C000275A2 /* PenaltyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PenaltyTableViewCell.swift; path = ../PenaltyTableViewCell.swift; sourceTree = "<group>"; };
+		421FD4981BF6A524000275A2 /* LocationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsTableViewController.swift; sourceTree = "<group>"; };
 		4258A9671BEDCE4D0026AEB2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4258A97A1BEDD8D20026AEB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Parkour/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4258A97C1BEDD8D20026AEB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Parkour/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -111,14 +119,18 @@
 		A5E81B191BC32FCE00B64049 /* Parkour */ = {
 			isa = PBXGroup;
 			children = (
-				4258A9831BEFFDDD0026AEB2 /* ContactsTableViewController.swift */,
-				421FD48E1BF3FC31000275A2 /* PenaltiesTableViewController.swift */,
-				4258A9891BF16D560026AEB2 /* Contact.swift */,
-				4258A9871BF020830026AEB2 /* ContactTableViewCell.swift */,
 				4258A9671BEDCE4D0026AEB2 /* AppDelegate.swift */,
-				421FD48C1BF2F7D0000275A2 /* MapListViewController.swift */,
-				4258A9791BEDD8D20026AEB2 /* Main.storyboard */,
+				421FD4901BF41039000275A2 /* TabBarViewController.swift */,
 				421FD4821BF292B6000275A2 /* NavigationViewController.swift */,
+				421FD48C1BF2F7D0000275A2 /* MapListViewController.swift */,
+				421FD4981BF6A524000275A2 /* LocationsTableViewController.swift */,
+				421FD48E1BF3FC31000275A2 /* PenaltiesTableViewController.swift */,
+				421FD4961BF69B0C000275A2 /* PenaltyTableViewCell.swift */,
+				421FD4921BF69566000275A2 /* Penalty.swift */,
+				4258A9831BEFFDDD0026AEB2 /* ContactsTableViewController.swift */,
+				4258A9871BF020830026AEB2 /* ContactTableViewCell.swift */,
+				4258A9891BF16D560026AEB2 /* Contact.swift */,
+				4258A9791BEDD8D20026AEB2 /* Main.storyboard */,
 				A5E81B211BC32FCE00B64049 /* Assets.xcassets */,
 				4258A97B1BEDD8D20026AEB2 /* LaunchScreen.storyboard */,
 				A5E81B261BC32FCE00B64049 /* Info.plist */,
@@ -274,13 +286,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				421FD4991BF6A524000275A2 /* LocationsTableViewController.swift in Sources */,
+				421FD4911BF41039000275A2 /* TabBarViewController.swift in Sources */,
 				421FD48F1BF3FC31000275A2 /* PenaltiesTableViewController.swift in Sources */,
 				4258A9881BF020830026AEB2 /* ContactTableViewCell.swift in Sources */,
 				421FD48D1BF2F7D0000275A2 /* MapListViewController.swift in Sources */,
 				4258A9841BEFFDDD0026AEB2 /* ContactsTableViewController.swift in Sources */,
 				4258A96A1BEDCE4D0026AEB2 /* AppDelegate.swift in Sources */,
 				421FD4831BF292B6000275A2 /* NavigationViewController.swift in Sources */,
+				421FD4931BF69566000275A2 /* Penalty.swift in Sources */,
 				4258A98A1BF16D560026AEB2 /* Contact.swift in Sources */,
+				421FD4971BF69B0C000275A2 /* PenaltyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
