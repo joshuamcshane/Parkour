@@ -17,6 +17,8 @@
 		A579A91B1BF90DCF004CB6C4 /* ParkingSpot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A579A91A1BF90DCF004CB6C4 /* ParkingSpot.swift */; };
 		A579A91D1BF90E09004CB6C4 /* parkingMeterSpot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A579A91C1BF90E09004CB6C4 /* parkingMeterSpot.swift */; };
 		A579A91F1BF90E39004CB6C4 /* freeParkingSpot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A579A91E1BF90E39004CB6C4 /* freeParkingSpot.swift */; };
+		A57DC91F1BF9415B007C2869 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57DC91E1BF9415B007C2869 /* DataViewController.swift */; };
+		A57DC9211BF944CD007C2869 /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57DC9201BF944CD007C2869 /* RestApiManager.swift */; };
 		A5E52A0F1BEE676400391DFF /* DeckAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E52A0E1BEE676400391DFF /* DeckAnnotation.swift */; };
 		A5E52A131BF1672700391DFF /* MapListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E52A121BF1672700391DFF /* MapListTableViewController.swift */; };
 		A5E81B1B1BC32FCE00B64049 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E81B1A1BC32FCE00B64049 /* AppDelegate.swift */; };
@@ -56,6 +58,8 @@
 		A579A91A1BF90DCF004CB6C4 /* ParkingSpot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingSpot.swift; sourceTree = "<group>"; };
 		A579A91C1BF90E09004CB6C4 /* parkingMeterSpot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = parkingMeterSpot.swift; sourceTree = "<group>"; };
 		A579A91E1BF90E39004CB6C4 /* freeParkingSpot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = freeParkingSpot.swift; sourceTree = "<group>"; };
+		A57DC91E1BF9415B007C2869 /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		A57DC9201BF944CD007C2869 /* RestApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
 		A5E52A0E1BEE676400391DFF /* DeckAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckAnnotation.swift; sourceTree = "<group>"; };
 		A5E52A121BF1672700391DFF /* MapListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapListTableViewController.swift; sourceTree = "<group>"; };
 		A5E81B171BC32FCE00B64049 /* Parkour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parkour.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,11 +129,13 @@
 				A5E81B231BC32FCE00B64049 /* LaunchScreen.storyboard */,
 				A5E81B211BC32FCE00B64049 /* Assets.xcassets */,
 				A5E81B1A1BC32FCE00B64049 /* AppDelegate.swift */,
+				A57DC91E1BF9415B007C2869 /* DataViewController.swift */,
+				A57DC9201BF944CD007C2869 /* RestApiManager.swift */,
 				A579A91A1BF90DCF004CB6C4 /* ParkingSpot.swift */,
+				A5FDDFCB1BC5D22B0096570C /* MapViewController.swift */,
 				A54F729E1BF40869008F8267 /* Deck.swift */,
 				A579A91C1BF90E09004CB6C4 /* parkingMeterSpot.swift */,
 				A579A91E1BF90E39004CB6C4 /* freeParkingSpot.swift */,
-				A5FDDFCB1BC5D22B0096570C /* MapViewController.swift */,
 				A5E52A0E1BEE676400391DFF /* DeckAnnotation.swift */,
 				A5E52A121BF1672700391DFF /* MapListTableViewController.swift */,
 				A54F72961BF3E1FE008F8267 /* DeckTableViewCell.swift */,
@@ -293,11 +299,13 @@
 			files = (
 				A579A91F1BF90E39004CB6C4 /* freeParkingSpot.swift in Sources */,
 				A54F729F1BF40869008F8267 /* Deck.swift in Sources */,
+				A57DC9211BF944CD007C2869 /* RestApiManager.swift in Sources */,
 				A579A91D1BF90E09004CB6C4 /* parkingMeterSpot.swift in Sources */,
 				A5E52A131BF1672700391DFF /* MapListTableViewController.swift in Sources */,
 				A579A91B1BF90DCF004CB6C4 /* ParkingSpot.swift in Sources */,
 				A54F729B1BF3F162008F8267 /* DecksCollectionViewController.swift in Sources */,
 				A55DB14B1BE18417006A1E74 /* ParkingStatusViewController.swift in Sources */,
+				A57DC91F1BF9415B007C2869 /* DataViewController.swift in Sources */,
 				A5E81B1B1BC32FCE00B64049 /* AppDelegate.swift in Sources */,
 				A5FDDFCC1BC5D22B0096570C /* MapViewController.swift in Sources */,
 				A54F72971BF3E1FE008F8267 /* DeckTableViewCell.swift in Sources */,

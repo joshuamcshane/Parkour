@@ -10,9 +10,10 @@ import UIKit
 
 class ParkingStatusViewController: UIViewController {
   
-    @IBOutlet weak var deckLabel: UILabel!
-    @IBOutlet weak var floorNumberLabel: UILabel!
-    @IBOutlet weak var timeClosesLabel: UILabel!
+
+    @IBOutlet weak var parkingSpotLabel: UILabel!
+    @IBOutlet weak var timeLeftLabel: UILabel!
+    
     
     var deckLetter :String!
     var floorNumber = 0;
@@ -28,26 +29,32 @@ class ParkingStatusViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        timeClosesLabel.text = "Time: \(hours)"
+        
+        
+//        timeClosesLabel.text = "Time: \(hours)"
       //  timeClosesLabel.text?.appendContentsOf(minutes)
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "subtractTime", userInfo: nil, repeats: true)
+//        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "subtractTime", userInfo: nil, repeats: true)
         
-        deckLabel.text = Deck.selectedDeck.name
-        floorNumberLabel.text?.appendContentsOf(String(floorNumber))
+//        parkingSpotLabel.text = Deck.selectedDeck.name
+//        floorNumberLabel.text?.appendContentsOf(String(floorNumber))
         
         // Do any additional setup after loading the view.
     }
     
-    func subtractTime() {
-        seconds--
-        timeClosesLabel.text = "Time: \(seconds)"
-      
-        if (seconds == 0) {
-            timer.invalidate()
-        }
-    }
+//    func subtractTime() {
+//        seconds--
+//        timeClosesLabel.text = "Time: \(seconds)"
+//      
+//        if (seconds == 0) {
+//            timer.invalidate()
+//        }
+//    }
 
+    @IBAction func goBack(sender: AnyObject) {
+        self.navigationController?.popToRootViewControllerAnimated(true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

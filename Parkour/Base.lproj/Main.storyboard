@@ -22,6 +22,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Fees/Penalties" id="r69-Kb-KBw"/>
+                    <navigationItem key="navigationItem" id="uJf-Rg-TvI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H0D-75-GLJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -39,7 +40,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parking Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDL-m1-gD8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Parking Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDL-m1-gD8">
                                 <rect key="frame" x="245" y="46" width="111" height="21"/>
                                 <animations/>
                                 <constraints>
@@ -59,7 +60,7 @@
                                 <color key="textColor" red="0.77647058820000003" green="0.047058823530000002" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlA-Rp-PL4">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlA-Rp-PL4">
                                 <rect key="frame" x="262" y="485" width="77" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Leave Spot"/>
@@ -75,7 +76,7 @@
                                 <rect key="frame" x="412" y="28" width="163" height="159"/>
                                 <animations/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLD-Em-7n1">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLD-Em-7n1">
                                 <rect key="frame" x="91" y="111" width="88" height="47"/>
                                 <animations/>
                                 <constraints>
@@ -104,6 +105,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Parking Status" id="bjR-Q8-Ox7"/>
+                    <navigationItem key="navigationItem" id="CEy-qG-vrf"/>
                     <connections>
                         <outlet property="deckLabel" destination="nLD-Em-7n1" id="NLw-fZ-Jg7"/>
                         <outlet property="floorNumberLabel" destination="1bW-mX-lTX" id="CKx-Kp-JPQ"/>
@@ -154,6 +156,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" id="5iO-qT-yYm"/>
+                    <navigationItem key="navigationItem" id="8a2-9Y-1Wm"/>
                     <connections>
                         <outlet property="mapSegment" destination="I2J-o3-kKu" id="4ml-Ts-zkC"/>
                         <outlet property="mapView" destination="AEG-mb-gQV" id="VZg-qw-Aoo"/>
@@ -206,7 +209,7 @@
                                             <rect key="frame" x="37" y="36" width="103" height="31"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -389,6 +392,20 @@
             </objects>
             <point key="canvasLocation" x="-670" y="1992"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rXb-Pt-RnT">
+            <objects>
+                <navigationController id="PNX-qm-saF" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MzN-cp-vSG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D81-0j-sfO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50" y="367"/>
+        </scene>
         <!--tabBarController-->
         <scene sceneID="bfm-vC-tNW">
             <objects>
@@ -438,6 +455,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Contacts" id="DXd-jV-3SS"/>
+                    <navigationItem key="navigationItem" id="Fbt-Ku-ula"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O2Q-UL-hGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

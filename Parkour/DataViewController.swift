@@ -1,26 +1,18 @@
 ////
-////  DeckDetailsViewController.swift
+////  DataViewController.swift
 ////  Parkour
 ////
-////  Created by Nathan Nguyen on 11/11/15.
+////  Created by Nathan Nguyen on 11/15/15.
 ////  Copyright © 2015 Nathan Nguyen. All rights reserved.
 ////
 //
 //import UIKit
 //
-//class DeckDetailsViewController: UIViewController {
+//class DataViewController: UIViewController {
 //
-//    @IBOutlet weak var hoursLabel: UILabel!
-//    @IBOutlet weak var entrancesLabel: UILabel!
-//    @IBOutlet weak var additionalParkingSpotsLabel: UILabel!
-//    
 //    override func viewDidLoad() {
 //        super.viewDidLoad()
 //
-//        hoursLabel.text = Deck.selectedDeck.hoursInfo
-//        entrancesLabel.text = Deck.selectedDeck.entrancesInfo
-//        additionalParkingSpotsLabel.text = Deck.selectedDeck.additionalParkingInfo
-//        
 //        // Do any additional setup after loading the view.
 //    }
 //
