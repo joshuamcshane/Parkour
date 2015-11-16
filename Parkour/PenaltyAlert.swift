@@ -9,5 +9,13 @@
 import UIKit
 
 class PenaltyAlert: UILocalNotification {
+    
+    init(penalty: Penalty) {
+        
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
 }
