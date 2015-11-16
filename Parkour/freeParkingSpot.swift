@@ -10,6 +10,8 @@ import UIKit
 
 class freeParkingSpot: parkingSpot {
     
-    static var turnerFieldParking = freeParkingSpot(name: "turnerFieldParking", hoursInfo: "", additionalParkingInfo: "", entranceInfo: "")
+    static var turnerFieldParking = freeParkingSpot(name: "turnerFieldParking", hoursInfo: "", accessibleParkingInfo: "", entranceInfo: "")
+    
+    
     
 }

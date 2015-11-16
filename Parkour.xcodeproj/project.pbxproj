@@ -29,6 +29,8 @@
 		A5887EB41BF971EB0028CE9C /* parkingMeterSpot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5887EB31BF971EB0028CE9C /* parkingMeterSpot.swift */; };
 		A5887EB61BF972420028CE9C /* parkingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5887EB51BF972420028CE9C /* parkingListTableViewController.swift */; };
 		A5887EB81BF973310028CE9C /* parkingSpotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5887EB71BF973310028CE9C /* parkingSpotTableViewCell.swift */; };
+		A5887EBA1BF9769C0028CE9C /* parkingStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5887EB91BF9769C0028CE9C /* parkingStatusViewController.swift */; };
+		A5887EBE1BF978CB0028CE9C /* parkingSpotDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5887EBD1BF978CB0028CE9C /* parkingSpotDetailsViewController.swift */; };
 		A5E81B221BC32FCE00B64049 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5E81B211BC32FCE00B64049 /* Assets.xcassets */; };
 		A5E81B301BC32FCE00B64049 /* ParkourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E81B2F1BC32FCE00B64049 /* ParkourTests.swift */; };
 		A5E81B3B1BC32FCE00B64049 /* ParkourUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E81B3A1BC32FCE00B64049 /* ParkourUITests.swift */; };
@@ -74,6 +76,8 @@
 		A5887EB31BF971EB0028CE9C /* parkingMeterSpot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = parkingMeterSpot.swift; sourceTree = "<group>"; };
 		A5887EB51BF972420028CE9C /* parkingListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = parkingListTableViewController.swift; path = ../parkingListTableViewController.swift; sourceTree = "<group>"; };
 		A5887EB71BF973310028CE9C /* parkingSpotTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = parkingSpotTableViewCell.swift; sourceTree = "<group>"; };
+		A5887EB91BF9769C0028CE9C /* parkingStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = parkingStatusViewController.swift; sourceTree = "<group>"; };
+		A5887EBD1BF978CB0028CE9C /* parkingSpotDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = parkingSpotDetailsViewController.swift; sourceTree = "<group>"; };
 		A5E81B171BC32FCE00B64049 /* Parkour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parkour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5E81B211BC32FCE00B64049 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5E81B261BC32FCE00B64049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -148,10 +152,12 @@
 				4258A9871BF020830026AEB2 /* ContactTableViewCell.swift */,
 				4258A9891BF16D560026AEB2 /* Contact.swift */,
 				A5887EA91BF96F6E0028CE9C /* MapViewController.swift */,
-				A5887EB71BF973310028CE9C /* parkingSpotTableViewCell.swift */,
 				A5887EB51BF972420028CE9C /* parkingListTableViewController.swift */,
-				A5887EB31BF971EB0028CE9C /* parkingMeterSpot.swift */,
+				A5887EB71BF973310028CE9C /* parkingSpotTableViewCell.swift */,
+				A5887EB91BF9769C0028CE9C /* parkingStatusViewController.swift */,
+				A5887EBD1BF978CB0028CE9C /* parkingSpotDetailsViewController.swift */,
 				A5887EAF1BF9716F0028CE9C /* parkingSpot.swift */,
+				A5887EB31BF971EB0028CE9C /* parkingMeterSpot.swift */,
 				A5887EAD1BF971460028CE9C /* Deck.swift */,
 				A5887EB11BF9718E0028CE9C /* freeParkingSpot.swift */,
 				4258A9791BEDD8D20026AEB2 /* Main.storyboard */,
@@ -311,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5887EB21BF9718E0028CE9C /* freeParkingSpot.swift in Sources */,
+				A5887EBA1BF9769C0028CE9C /* parkingStatusViewController.swift in Sources */,
 				421FD4991BF6A524000275A2 /* LocationsTableViewController.swift in Sources */,
 				421FD4911BF41039000275A2 /* TabBarViewController.swift in Sources */,
 				421FD48F1BF3FC31000275A2 /* PenaltiesTableViewController.swift in Sources */,
@@ -321,6 +328,7 @@
 				A5887EAA1BF96F6E0028CE9C /* MapViewController.swift in Sources */,
 				4258A96A1BEDCE4D0026AEB2 /* AppDelegate.swift in Sources */,
 				A5887EB41BF971EB0028CE9C /* parkingMeterSpot.swift in Sources */,
+				A5887EBE1BF978CB0028CE9C /* parkingSpotDetailsViewController.swift in Sources */,
 				421FD4831BF292B6000275A2 /* NavigationViewController.swift in Sources */,
 				421FD4931BF69566000275A2 /* Penalty.swift in Sources */,
 				4258A98A1BF16D560026AEB2 /* Contact.swift in Sources */,

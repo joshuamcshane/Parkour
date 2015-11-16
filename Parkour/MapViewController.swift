@@ -106,11 +106,11 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
             annotationView!.canShowCallout = true
             
-            // 5
-            //                let btn = UIButton(type: .DetailDisclosure)
-            //                annotationView!.rightCalloutAccessoryView = btn
+            
+                            let btn = UIButton(type: .DetailDisclosure)
+                            annotationView!.rightCalloutAccessoryView = btn
         } else {
-            // 6
+            
             annotationView!.annotation = annotation
         }
         
@@ -147,9 +147,9 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         var mapItem = MKMapItem(placemark: placemark)
         mapItem.openInMapsWithLaunchOptions(launchOptions)
         
-        let ac = UIAlertController(title: "test", message: "test", preferredStyle: .Alert)
-        ac.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-        presentViewController(ac, animated: true, completion: nil)
+//        let ac = UIAlertController(title: "test", message: "test", preferredStyle: .Alert)
+//        ac.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+//        presentViewController(ac, animated: true, completion: nil)
         
         //        let deckDetailsViewController = self.storyboard!.instantiateViewControllerWithIdentifier("deckDetailsViewController")
         //

@@ -10,6 +10,8 @@ import UIKit
 
 class parkingMeterSpot: parkingSpot {
     
-    static var gilmerStreet = parkingMeterSpot (name: "gilmerStreet" , hoursInfo: "", additionalParkingInfo: "", entranceInfo: "")
+    static var gilmerStreet = parkingMeterSpot (name: "Gilmer Street", detailInfo: "Location\n Gilmer Street")
+    
+    static var parkPlaceStreet = parkingMeterSpot (name: "Park Place Street", detailInfo: "Location\n Park Place Street")
     
 }

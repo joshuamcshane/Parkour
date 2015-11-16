@@ -35,6 +35,7 @@ class ParkingListTabViewController : UITableViewController {
         parkingDecks.append(Deck.gDeck)
         parkingDecks.append(freeParkingSpot.turnerFieldParking)
         parkingDecks.append(parkingMeterSpot.gilmerStreet)
+        parkingDecks.append(parkingMeterSpot.parkPlaceStreet)
         
         
         Deck.mDeck.name = "mDeck"
@@ -104,7 +105,7 @@ class ParkingListTabViewController : UITableViewController {
         
         //        let tabBarController = self.storyboard!.instantiateViewControllerWithIdentifier("tabBarController") as! UITabBarController
         
-        
+        parkingSpot.selectedParkingSpot = parkingDecks[indexPath.row]
         
         parkingDecks[indexPath.row].parkingSpotsLeft--
         
@@ -117,11 +118,14 @@ class ParkingListTabViewController : UITableViewController {
         
     }
     
-    @IBAction func showDeckInfo(sender: AnyObject) {
+ 
+
+    @IBAction func showParkingSpotDetails(sender: AnyObject) {
         
-        let mapTableViewController = self.storyboard!.instantiateViewControllerWithIdentifier("ParkingDetailsViewController")
+        let mapTableViewController = self.storyboard!.instantiateViewControllerWithIdentifier("parkingSpotDetailsViewController")
         
         self.presentViewController(mapTableViewController, animated: true, completion: nil)
+        
     }
     
     
