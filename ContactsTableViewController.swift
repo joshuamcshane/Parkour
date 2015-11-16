@@ -39,7 +39,7 @@ class ContactsTableViewController: UITableViewController {
         
         
         
-        contacts += [contact1, contact2]
+        contacts += [contact1, contact2, contact3, contact4]
         
     }
 
