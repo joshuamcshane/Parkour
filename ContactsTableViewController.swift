@@ -33,7 +33,13 @@ class ContactsTableViewController: UITableViewController {
         
         let contact2 = Contact(name: "Georgia State University Police Department", street: "34 Broad Street, Room 1108", city: "Atlanta", state: "GA", zip: 30303, phone: 4044133333, email: "police@gsu.edu")!
         
-        contacts += [contact1, contact2]
+        let contact3 = Contact(name: "City of Atlanta Police Department", street: "226 Peachtree St", city: "Atlanta", state: "GA", zip: 30303, phone: 4046146544, email: "enespy@atlantaga.gov")!
+        
+        let contact4 = Contact(name: "Municipal Court of Atlanta", street: "150 Garnett St SW", city: "Atlanta", state: "GA", zip: 30303, phone: 4046586940, email: "municourt@atlantaga.gov")!
+        
+        
+        
+        contacts += [contact1, contact2, contact3, contact4]
         
     }
 

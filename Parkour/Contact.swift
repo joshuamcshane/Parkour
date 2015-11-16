@@ -22,14 +22,7 @@ class Contact {
     
     var fullInfo: String
     
-//    var info: String
-    
     //MARK: Initialization
-    
-//    init?(name: String, info: String) {
-    
-//        self.name = name
-//        self.info = info
         
         
         init?(name: String, street: String, city: String, state: String, zip: Int, phone: Int, email: String) {
